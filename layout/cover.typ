@@ -27,11 +27,11 @@
       font: fonts.sans,
       1.3em,
       weight: 700,
-      "Министерство образования и науки Российской Федерации Московский физико-технический институт (государственный университет)",
-    ),
+    )[
+      Министерство образования и науки Российской Федерации Московский физико-технический институт (государственный университет)
+    ],
   )
 
-  // TODO: replace with your info
   v(5mm)
   align(
     center,
@@ -39,8 +39,13 @@
       font: fonts.sans,
       1.5em,
       weight: 100,
-      "Физтех-школа радиотехники и компьютерных технологий\nКафедра Микропроцессорных технологий в интеллектуальных системах управления\nPlaceholderCorporation",
-    ),
+    )[
+      Физтех-школа радиотехники и компьютерных технологий
+      #linebreak()
+      Кафедра Перспективных Вычислительных технологий
+      #linebreak()
+      СБЕР
+    ],
   )
 
   v(15mm)
@@ -51,31 +56,35 @@
       font: fonts.sans,
       1.3em,
       weight: 100,
-      "Выпускная квалификационная работа " + degree + "a",
-    ),
+    )[
+      Выпускная квалификационная работа #(degree + "a")
+    ],
   )
   v(15mm)
 
-  align(center, text(font: fonts.sans, 2em, weight: 100, title))
+  align(center, text(font: fonts.sans, 2em, weight: 100)[#title])
 
   v(10mm)
 
-  align(right + bottom, text(font: fonts.sans, 1.2em, weight: 700, "Автор:"))
+  align(right + bottom, text(font: fonts.sans, 1.2em, weight: 700)[Автор:])
   align(
     right + bottom,
     text(
       font: fonts.sans,
       1.2em,
       weight: 500,
-      "Студент " + class + " группы\n" + author,
-    ),
+    )[
+      Студент #class группы
+      #linebreak()
+      #author
+    ],
   )
   v(10mm)
   align(
     right + bottom,
-    text(font: fonts.sans, 1.2em, weight: 700, "Научный руководитель:"),
+    text(font: fonts.sans, 1.2em, weight: 700)[Научный руководитель:],
   )
-  align(right + bottom, text(font: fonts.sans, 1.2em, weight: 500, supervisor))
+  align(right + bottom, text(font: fonts.sans, 1.2em, weight: 500)[#supervisor])
 
   v(1cm)
   align(center + bottom, image("../figures/mipt_logo.jpg", width: 26%))
@@ -85,7 +94,8 @@
       font: fonts.sans,
       1.2em,
       weight: 100,
-      "Москва " + date.display("[year]"),
-    ),
+    )[
+      Москва #date.display("[year]")
+    ],
   )
 }

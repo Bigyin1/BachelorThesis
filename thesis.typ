@@ -12,6 +12,7 @@
 )
 
 #include "/content/introduction.typ"
+#include "/content/task_setup.typ"
 #include "/content/related_work.typ"
 #include "/content/system_design.typ"
 #include "/content/evaluation.typ"

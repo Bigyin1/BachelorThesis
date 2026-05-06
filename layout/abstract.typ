@@ -31,18 +31,7 @@
       1.5em,
       weight: 100,
       [
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat orci nec
-        quam tristique, in congue ante iaculis. Aliquam mi velit, tristique at orci in,
-        tincidunt semper tortor. Maecenas iaculis eleifend libero ut dignissim.
-        Phasellus volutpat, urna nec scelerisque congue, dui est auctor erat, id gravida
-        ante lorem eu leo. Fusce varius leo non vehicula tempor. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras
-        ultricies efficitur augue, at aliquet metus facilisis id. Nulla semper, ex vitae
-        lobortis tristique, risus augue viverra neque, eget convallis sem massa eu est.
-        Praesent ac mi sed dui porta posuere id id libero. Quisque vitae augue feugiat,
-        blandit urna rhoncus, vestibulum leo. Duis iaculis, lectus sed scelerisque
-        varius, lectus nisl semper quam, sit amet consequat sem ante eget ante. Nunc non
-        malesuada leo. Aenean fermentum mauris nibh.
+        Работа посвящена разработке подсистемы отладки в RISC-V процессоре. Актуальность темы связана с ростом интереса к открытой архитектуре RISC-V и необходимостью иметь эффективные инструменты создания и верификации программного обеспечения. Целью дипломной работы является проектирование и исследование подсистемы, обеспечивающей наблюдение за состоянием процессора, управление выполнением программы и локализацию ошибок.
       ],
     ),
   )

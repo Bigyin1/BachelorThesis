@@ -4,5 +4,8 @@
 #show: codly-init.with()
 
 = Исследование и построение решения задачи <chapt-solution>
+
+
+
 == Вывод
 
