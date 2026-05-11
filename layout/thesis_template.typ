@@ -20,6 +20,7 @@
   is_print: false,
   print_appendix: false,
   list_figures: false,
+  list_tables: false,
   body,
 ) = {
   cover(
@@ -104,13 +105,15 @@
     outline(title: "", target: figure.where(kind: image))
   }
   // List of tables.
-  context [
-    #if query(figure.where(kind: table)).len() > 0 {
-      pagebreak()
-      heading(numbering: none)[List of Tables]
-      outline(title: "", target: figure.where(kind: table))
-    }
-  ]
+  if list_tables {
+    context [
+      #if query(figure.where(kind: table)).len() > 0 {
+        pagebreak()
+        heading(numbering: none)[List of Tables]
+        outline(title: "", target: figure.where(kind: table))
+      }
+    ]
+  }
 
   // Appendix.
   if print_appendix {
