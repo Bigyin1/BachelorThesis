@@ -1,5 +1,15 @@
 #import "/layout/thesis_template.typ": *
 #import "/metadata.typ": *
+#import "@preview/i-figured:0.2.4"
+
+#show figure: i-figured.show-figure
+#show heading: i-figured.reset-counters
+
+#show figure.caption: set text(
+  size: 12pt,
+)
+
+// #i-figured.outline()
 
 #set document(title: title, author: author)
 
